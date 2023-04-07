@@ -29,23 +29,15 @@ namespace csharp_oop_shop
             //iva
             public int Iva { get { return iva; } }
 
-        //assegnazione caratteristiche fisse prodotto
-
-        public Prodotto()
-        {
-            code = new Random().Next(1, 100000); //codice con valore non modificabile
-            iva = 22; //iva con valore non modificabile
-        }
-
         //assegnazione caratteristiche variabili prodotto (nome, descrizione e prezzo)
         public Prodotto(string name, string descr, decimal price)
         {
 
-            code = new Random().Next(1, 100000);
+            code = new Random().Next(1, 100000);  //non modificabile
             Name = name;
             Descr = descr;
             Price = price;
-            iva = 22;
+            iva = 22; //non modificabile
 
         }
 
