@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,6 +58,11 @@ namespace csharp_oop_shop
         public void CodedName()
         {
             Console.WriteLine($"{code} - {Name}"); //nome prodotto con codice
+        }
+
+        public void CodeZeros()
+        {
+            Console.Write(code.ToString().PadLeft(8, '0') + " <--codice con degli 0 per arrivare a 8 cifre\n");
         }
 
     }
