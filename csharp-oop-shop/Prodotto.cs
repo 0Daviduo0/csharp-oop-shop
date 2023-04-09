@@ -47,14 +47,16 @@ namespace csharp_oop_shop
             return priceWiva;
         }
 
-        public void CodedName()
+        public string CodedName()
         {
-            Console.WriteLine($"{code} - {Name}"); //nome prodotto con codice
+            string codeWname = code.ToString() + " - " + Name; //nome prodotto con codice
+            return codeWname;
         }
 
-        public void CodeZeros()
+        public string CodeZeros()
         {
-            Console.Write(code.ToString().PadLeft(8, '0') + " <--codice con degli 0 per arrivare a 8 cifre\n");
+            string codeWzeros = code.ToString().PadLeft(8, '0');
+            return codeWzeros;
         }
 
     }

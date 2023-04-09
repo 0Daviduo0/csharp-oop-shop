@@ -23,12 +23,14 @@ namespace csharp_oop_shop
                     {
                         Console.WriteLine("\n--------------------------PRODOTTO--------------------------");
                         //esecuzione funzioni per avere il nome del prodotto e per avere il prezzo tassato
-                        prodotto.CodedName();
+                        Console.WriteLine("Nome prodotto con codice --> " + prodotto.CodedName());
                         Console.WriteLine("info --> " + prodotto.Descr);
                         Console.WriteLine("prezzo --> " + prodotto.Price + "$");
                         Console.WriteLine("Prezzo con iva --> " + prodotto.PriceTaxed() + "$");
+
                         Console.WriteLine("------------Parte BONUS------------");
-                        prodotto.CodeZeros();
+                        Console.WriteLine("Codice con zeri --> " + prodotto.CodeZeros());
+
             }
 
 
